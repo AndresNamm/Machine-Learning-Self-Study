@@ -58,7 +58,6 @@ end
 % Cost calculation with a and y
 
 J = -(1/m) * sum(sum((1-y_vec).*(log(1-h)) + (y_vec).*(log(h))));
-
 J = J + lambda/(2*size(X,1)).*(sum(sum(Theta1(:,2:end).**2))+sum(sum(Theta2(:,2:end).**2)));
 
 
@@ -78,6 +77,10 @@ J = J + lambda/(2*size(X,1)).*(sum(sum(Theta1(:,2:end).**2))+sum(sum(Theta2(:,2:
 %               over the training examples if you are implementing it for the 
 %               first time.
 %
+
+
+
+
 
 
 
