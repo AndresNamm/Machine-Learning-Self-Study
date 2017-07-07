@@ -48,7 +48,7 @@ $sigmoid(x)=\frac{1}{1+e^{-X\theta}}=\frac{1}{1+e^{-h(\theta)}}$
 
 COST FUNCTION
 
-$J(\theta)=\frac{1}{2m}\sum_{1}^{m}-[y * (ln(sigmoid(X\theta))+(1-y)* ln(1-sigmoid(X\theta))]$  
+$J(\theta)=\frac{1}{2m}\sum_{1}^{m}-[y .* (ln(sigmoid(X\theta))+(1-y).* ln(1-sigmoid(X\theta))]$  
 
 ** _$ln(0)=\infty$_  
 ** _$ln(1)=0$_  

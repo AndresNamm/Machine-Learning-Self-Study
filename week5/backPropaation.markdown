@@ -34,6 +34,8 @@ https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b
 + E - another symbol for cost function J
 + $\lambda$ - regularization term   
 + $\theta^{L}_{ij}$
++ $\Delta$ - this is used for cumuating the gradietns calculated on every training example for every theta
++ D - final gradient after one iteration of backpropagation. 
 
 
 ### Steps
@@ -77,7 +79,7 @@ Initialize $\Delta^{l}_{ij}=0,  \forall ij\text{ and }l$
 
 $\frac{\partial E(\theta)}{\partial \theta }$ - final form of derivative after this training step
 
-+ Update $D^{(l)}_{i,j} := \dfrac{1}{m}\left(\Delta^{(l)}_{i,j} + \lambda\Theta^{(l)}_{i,j}\right)$  if j no equal 0 <- add regularization
++ Update $D^{(l)}_{i,j} := \dfrac{1}{m}\left(\Delta^{(l)}_{i,j} + \lambda\Theta^{(l)}_{i,j}\right)$  if j no equal 0 <- add derivative of regularization
 + Update $D^{(l)}_{i,j} := \dfrac{1}{m}\Delta^{(l)}_{i,j}$ j = 0 <- no regularization for bias term
 
 
@@ -134,7 +136,7 @@ Reminder
 + $z=\theta a$
 + 1 scalar $\theta$ has effect only on 1 z
 
-$\frac{\partial E}{\partial \theta^{l}_{ij}}=\frac{\partial E}{z^{l+1}_{i}} \frac{\partial z^{l+1}_{i}}{\partial \theta^{l}_{ij}}$
+$\frac{\partial E}{\partial \theta^{l}_{ij}}=\frac{\partial E}{z^{l+1}_{i}}$ **$\frac{\partial z^{l+1}_{i}}{\partial \theta^{l}_{ij}}$**
 
 
 **This in regular derivative form translates to**
@@ -160,6 +162,8 @@ $\dfrac{\partial}{\partial\Theta_j}J(\Theta) \approx \dfrac{J(\Theta_1, \dots, \
 + For 1 matrix this looks like this.
 
 ~~~octave
+thetaPlus=zeros(theta)
+gradApprox=zeros(theta)
 epsilon = 1e-4;
 for i = 1:n,
   thetaPlus = theta;
