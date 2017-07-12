@@ -1,0 +1,9 @@
++ Anomaly Detection is like bayes method 
+    + In anomaly detection we train only on negative examples- 
++ When to choose supervised vs anomaly . We chose anomaly method when we dont have many anomalys.
+ E.g. where its hard to get a significant pattern for anomaly ..
+ 
+Advice For applying anomaly detection 
++ Plot histograms - to see that Gaussian distribution exists
++ Find high covariance  features - then low covariance might be anomalous 
+ 

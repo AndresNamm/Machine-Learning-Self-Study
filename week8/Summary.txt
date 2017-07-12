@@ -1,0 +1,16 @@
+## PCA
+
+basis 
+eigenvectors
+eigenvalues
+linear transforms - 
+basis transforms 
+
+
+Principally in one sentence. PCA performs change of basis to highest variance reduced directions. New basis are
+going to be (Orthogonal) eigenvectors  of the linear transform - covariance matrix. We find those basis and the perform basis transformation of the data.
+
+
+
+ 
+
