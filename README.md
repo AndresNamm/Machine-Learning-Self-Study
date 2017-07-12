@@ -3,25 +3,25 @@
 ## Topics
 
 
-Introduction
-Linear Regression with One Variable
-Linear Algebra Review
-Linear Regression with Multiple Variables
-Octave Tutorial
-Logistic Regression
-Regularization
-Neural Networks: Representation
-Neural Networks: Learning
-Advice for Applying Machine Learning
-Machine Learning System Design
-Support Vector Machines
-Clustering
-Dimensionality Reduction
-Anomaly Detection
-Recommender Systems
-Large Scale Machine Learning
-Application Example: Photo OCR
-Conclusion
++ Introduction
++ Linear Regression with One Variable
++ Linear Algebra Review
++ Linear Regression with Multiple Variables
++ Octave Tutorial
++ Logistic Regression
++ Regularization
++ Neural Networks: Representation
++ Neural Networks: Learning
++ Advice for Applying Machine Learning
++ Machine Learning System Design
++ Support Vector Machines
++ Clustering
++ Dimensionality Reduction
++ Anomaly Detection
++ Recommender Systems
++ Large Scale Machine Learning
++ Application Example: Photo OCR
++ Conclusion
 
 
 ## Online resources
